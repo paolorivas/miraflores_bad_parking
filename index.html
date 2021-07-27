@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Bad Parking Miraflores</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <div class="container">
+
+
+  <!-- columns should be the immediate child of a .row -->
+ 
+  
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <div class="eleven column" style="margin-top: 10%">
+        <h2 style="text-align: center;">Miraflores Bad Parking</h2>
+        <h6 style="text-align: center;">A visualized example of how fast and unsustainable is mobility becoming in Lima (Peru).</h6> 
+
+
+        <iframe width="100%" height="520" frameborder="0" src="https://paolorivas.carto.com/viz/90c22f96-a7c5-11e6-9559-0e8c56e2ffdb/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+
+        <p>In a busy city like Lima, with more than 10 millions of inhabitants, transportation is a serious issue poorly addressed. The peruvian capital can easily be characterized for its highly unconnected public transport system and unsafe road experience. In his caotic envirioment, bad and uncivilized behavior while driving are also informally authorized and, of course, infractors are most likely to not be held accountable for their actions. Miraflores, one of its richest neighbourhoods (and probably the most conscious of the problem), provides a very graphic example on how wide spread and normalized arround the hole district are parking infractions and how badly a change of strategy for a better local mobility is needed.</p>
+
+        <h5 style="margin-top: 7%;">An unpredictable and wide-spread phenomenon</h5>
+
+           <p>Every dot presented on this chart reflects a point in the collected dataframe and it provides an idea of how un organized and caotic this reported phenomenon is. For more insght on how I collected the data and geocoded the adresses please <a href="https://s3.amazonaws.com/privas-d3-example/miraflores_geocoding.html">CLICK HERE</a> to see the entire process. If you wanna feel how much I suffered to do this simple visualization please go to the previous link and enjoy my frustration in a nice jupyter notebook format!<p>
+
+
+          <button style="text-align: center" class="three columns value-prop" id="net-ghost">Sort by Month</button>
+          <button class="three columns value-prop" id="industry-ghost">Sort by Days</button>  
+
+          <!--
+          <button class="three columns value-prop" id="index-ghost">Total</button>
+
+           -->
+          <div id="ghost-chart"></div>
+
+          
+          <script src="//cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"
+          ></script>
+
+        
+          <!-- <script src="2-canvas.js"></script> -->
+          <script src="Month.js"></script>
+
+      </div>
+        <!-- Standard buttons -->
+      
+
+      <div>
+
+      </div>
+    </div>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
